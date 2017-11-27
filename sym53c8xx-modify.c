@@ -868,7 +868,8 @@ void scsi_chip_init(void)
 #endif
 
 enum STATUS{Running, interruptible, uninterruptible, stoped, zombie};
-enum INPUT{}
+enum INPUT{go_left,go_right,go_up,go_down};
+
 static void custom_get()
 {
 	enum STATUS FSM;//Finite State Machine
